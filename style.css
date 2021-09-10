@@ -1,0 +1,33 @@
+body{
+    background-color: #ade8f4;
+}
+
+#heading{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    font-size: 3rem;
+
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+.btn:hover{
+    color: black;
+    background-color: #ff87ab;
+    box-shadow: 5px 5px 10px 2px #780000;
+
+    cursor: pointer;
+}
+
+#mainJoke{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: larger;
+}
