@@ -10,18 +10,17 @@ body{
     padding-bottom: 2rem;
 }
 
-.btn{
-    font-size: 3rem;
+#jokeBtn{
+    font-size: 2rem;
 
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
 .btn:hover{
     color: black;
-    background-color: #ff87ab;
-    box-shadow: 5px 5px 10px 2px #780000;
+    box-shadow: 5px 5px 10px 2px #001278;
 
     cursor: pointer;
 }
