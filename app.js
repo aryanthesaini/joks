@@ -1,4 +1,3 @@
-
 const jokes = document.querySelector('#jokess');
 
 const dadJoke = async () => {
@@ -14,15 +13,18 @@ const dadJoke = async () => {
 
 }
 
+
 const bt = document.querySelector('button');
 
 const addNewJoke = async () => {
 
     const jokeText = await dadJoke();
-    const newLI = document.createElement('LI');
-    newLI.className = "list-group-item list-group-item-danger";
-    newLI.append(jokeText);
-    jokes.append(newLI);
+
+    document.getElementById("mainBox").innerHTML = jokeText;
+    // const newLI = document.createElement('LI');
+    // newLI.className = "list-group-item list-group-item-danger";
+    // newLI.append(jokeText);
+    // jokes.append(newLI);
 }
 
 bt.addEventListener('click', addNewJoke);
