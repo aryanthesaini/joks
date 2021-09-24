@@ -14,17 +14,36 @@ const dadJoke = async () => {
 }
 
 
-const bt = document.querySelector('button');
+const bt = document.querySelector('#jokeBtn');
+const bt2 = document.querySelector('#closeBtn');
+
 
 const addNewJoke = async () => {
-
     const jokeText = await dadJoke();
+    document.getElementById("mainBox").innerHTML = "";
+    load();
+    setTimeout(function () {
 
-    document.getElementById("mainBox").innerHTML = jokeText;
-    // const newLI = document.createElement('LI');
-    // newLI.className = "list-group-item list-group-item-danger";
-    // newLI.append(jokeText);
-    // jokes.append(newLI);
+        document.getElementById("mainBox").innerHTML = jokeText;
+    }, 500);
+
+
+}
+const load = () => {
+    const newDiv = document.createElement('div');
+    newDiv.className = "d-flex justify-content-center";
+    const newDiv2 = document.createElement('div');
+    newDiv2.className = "spinner-grow text-info";
+    newDiv.append(newDiv2);
+    const newSpan = document.createElement('span');
+    newSpan.className = "spinner-border";
+    newDiv2.append(newSpan);
+    mainBox.append(newDiv);
+
 }
 
+
+
 bt.addEventListener('click', addNewJoke);
+
+
