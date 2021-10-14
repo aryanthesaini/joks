@@ -10,12 +10,22 @@ body{
     padding-bottom: 2rem;
 }
 
-#jokeBtn{
+
+.but{
     font-size: 2rem;
 
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+#second{
+    font-size: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 
 
 .btn:hover{
